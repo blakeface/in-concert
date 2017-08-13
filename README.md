@@ -10,4 +10,6 @@ make friends. listen to music. 👯
 
 📲 To install / run / build:
   * install [meteor](https://www.meteor.com/install)
-  * $ meteor
+  * for web: $ meteor
+  * for iOS simulator: $ meteor run ios
+  * for iOS Xcode: $ meteor run ios-device
