@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import EmailLogin from './logins/email.jsx';
 
 export default class LandingPage extends Component {
   constructor(){
     super()
     state = {
       emailModalVis: false,
-    }
+    };
   }
 
   handleEmailClick () {
@@ -15,11 +16,11 @@ export default class LandingPage extends Component {
   }
 
   handleFacebookClick () {
-    console.log('click')
+    console.log('Facebook click');
   }
 
   handleTwitterClick () {
-    console.log('click')
+    console.log('twitter click');
   }
 
   render () {
@@ -34,19 +35,8 @@ export default class LandingPage extends Component {
           <button onClick={this.handleFacebookClick}><i className="fa fa-facebook-square" aria-hidden="true"></i>Signup with Facebook</button>
           <button onClick={this.handleTwitterClick}><i className="fa fa-twitter-square" aria-hidden="true"></i>Signup with Twitter</button>
         </div>
+        { this.state.emailModalVis ? <EmailLogin /> : null }
 
-        <div id="modal-email" className="modalbox-modal">
-          <div className="modalbox-modal-content">
-            <form>
-              <label for="username">Username</label>
-              <input type="text" id="username" name="username" />
-              <label for="email">Email</label>
-              <input type="text" id="email" name="email" />
-              <label for="password">Password</label>
-              <input type="text" id="password" name="password" />
-            </form>
-          </div>
-        </div>
       </main>
     )
   }
