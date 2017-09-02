@@ -4,6 +4,7 @@ make friends. listen to music. 👯
 
 🛠 Specs:
   * Meteor
+  * React Native
 
 🔩 Hosting specs:
 
