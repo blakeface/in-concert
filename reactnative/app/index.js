@@ -7,11 +7,11 @@ import {
 import Meteor from 'react-native-meteor';
 
 const SERVER_URL = 'ws://localhost:3000/websocket';
-const SERVER_IP = 'ws://169.254.58.21:3000/websocket'; // use if testing on emulator or device
+const SERVER_IP = 'ws://73.153.148.102:3000/websocket';
 
 class App extends Component {
   componentWillMount() {
-    Meteor.connect(SERVER_URL)
+    Meteor.connect(SERVER_URL);
   }
 
   render() {
