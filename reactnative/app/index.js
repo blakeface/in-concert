@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+// native elements
 import {
   StyleSheet,
+  View,
   Text,
-  View
 } from 'react-native';
+// additional elements
+
 import Meteor from 'react-native-meteor';
 
 const SERVER_URL = 'ws://localhost:3000/websocket';
@@ -16,15 +19,10 @@ class App extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native + Meteor!
-        </Text>
-        <Text style={styles.instructions}>
-          We will use this soon
-        </Text>
-      </View>
-    );
+     <View style={styles.container}>
+         <Text h1 style={styles.header}>In:Concert</Text>
+     </View>
+   );
   }
 }
 
@@ -35,16 +33,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  header: {
+    fontFamily: "AMVINYL-Heavy",
+  }
 });
 
 export default App;
