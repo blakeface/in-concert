@@ -2,14 +2,14 @@
 
 make friends. listen to music. 👯
 
-#🛠 Specs:
+### 🛠 Specs:
   * Meteor
-  * React Native
+  * React Native    
 
-#🔩 Hosting specs:
+###🔩 Hosting specs:
+  * tbd   
 
-
-#📲 To install / run / build:
+### 📲 To install / run / build:
   * install [meteor](https://www.meteor.com/install) & [react-native](https://facebook.github.io/react-native/releases/0.33/docs/getting-started.html)    
 
   * setup meteor server and fire her up!  
