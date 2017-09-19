@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import EmailLogin from './logins/email.jsx';
 
-export default class LandingPage extends Component {
+export default class Login extends Component {
   constructor(){
     super()
     state = {

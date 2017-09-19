@@ -4,12 +4,12 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 
 // components
-import LandingPage from '../../ui/components/landingpage.jsx';
+import Login from '../../ui/components/login.jsx';
 
 export default class App extends Component {
   render() {
     return (
-      <LandingPage />
+      <Login />
     );
   }
 }
