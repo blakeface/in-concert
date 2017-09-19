@@ -1,13 +1,11 @@
 # In::Concert
+make friends. listen to music. 👯   
 
-make friends. listen to music. 👯
+### NOTE: This was a test branch to use react-native. It was decided that I'm trying something more ingrained wiht the Meteor environment and didn't want to separate my frontend. ###
 
 ### 🛠 Specs:
   * Meteor
   * React Native    
-
-###🔩 Hosting specs:
-  * tbd   
 
 ### 📲 To install / run / build:
   * install [meteor](https://www.meteor.com/install) & [react-native](https://facebook.github.io/react-native/releases/0.33/docs/getting-started.html)    
