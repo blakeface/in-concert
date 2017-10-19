@@ -1,22 +1,49 @@
 body {
   margin: 0;
   font-family: 'Roboto';
+  background: #FD8885;
 }
 
-.lp {
-  .flexCenter;
+.scene {
   height: 100vh;
-  width: 100vw;
-  background-image: url('/img/concert.jpg');
-  background-size: cover;
+}
+
+.smMove {
+  left: -1000;
+}
+
+.welcome {
+  .flexCenter;
 
   .headerwrap {
-    .flexCenter;
-    background: pink;
-    top: 50;
+    z-index: 2;
     h1 {
-      font-family: 'techno';
+      font-family: 'vinyl';
       margin: 0.7rem;
     }
   }
+  
+  svg {
+    position: absolute;
+  }
+
+  i {
+    z-index: 2;
+  }
 }
+
+.loginButtons {
+  .flexCenter;
+  z-index: 2;
+
+  button {
+    width: 325px;
+    border-color: #000;
+    color: #000;
+  }
+
+  i {
+    padding: 0 0.5em 0 0;
+  }
+}
+
