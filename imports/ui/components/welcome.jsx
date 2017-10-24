@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import ScrollMagic from 'scrollmagic';
+import addIndicators from 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
+import { TweenMax } from "gsap";
 
 export default class Welcome extends Component {
 	constructor(){
 		super();
 		this.state = {
-			initSM: false,
+			scrollMagicReady: false,
 		};
+		this.smController = new ScrollMagic.Controller();
 		this.circles = [];
 	}
 
@@ -35,36 +38,34 @@ export default class Welcome extends Component {
 		this.circles = document.querySelectorAll('circle');
 	}
 
-	initSM() {
+	initScrollMagic() {
 		const scrollEndEle = document.querySelector('#scrollEnd');
 		const scrollEndRect = scrollEndEle.getBoundingClientRect();
-		const smScene = new ScrollMagic.Scene({
-			duration: scrollEndRect.bottom,
-			loglevel: 3,
-		})
 
 		for (var i = this.circles.length - 1; i >= 0; i--) {
 			if (this.circles[i].id) {
-				smScene.setClassToggle(`#${this.circles[i].id}`, 'smMove');
-				smScene.addTo(this.smController);
+				const smScene = new ScrollMagic.Scene({
+					triggerElement: '#scrollStart',
+					duration: 500,
+					loglevel: 3,
+				})
+				.setPin(`#${this.circles[i].id}`)
+				.addIndicators()
+				.addTo(this.smController);
 			}
 		}
 
-		this.setState({initSM: true});
-	}
-
-	componentWillMount() {
-		this.smController = new ScrollMagic.Controller();
+		this.setState({scrollMagicReady: true});
 	}
 
 	componentDidMount() {
 		if (this.circles.length == 0) this.drawCircles();
-		if (this.state.initSM == false) this.initSM();
+		if (this.state.scrollMagicReady == false) this.initScrollMagic();
 	}
 
 	render () {
 		return (
-			<article>
+			<article id="sceneContainer">
 				<div className="scene welcome">
 					<div className="headerwrap">
 						<h1>In:Concert</h1>
