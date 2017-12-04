@@ -1,13 +1,13 @@
 {
-	"name": "in_concert",
-	"version": "0.0.1",
-	"private": true,
-	"description": "Listen to tunes. Make friends.",
-	"author": "Blake Netzeband",
-	"email": "blake.netzeband@gmail.com",
-	"url": "http://blakeface.us",
-	"license": "MIT",
-	"bugs": {
+  "name": "in_concert",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Listen to tunes. Make friends.",
+  "author": "Blake Netzeband",
+  "email": "blake.netzeband@gmail.com",
+  "url": "http://blakeface.us",
+  "license": "MIT",
+  "bugs": {
     "url": "https://github.com/blakeface/in-concert/issues"
   },
   "homepage": "https://github.com/blakeface/in-concert#readme",
@@ -16,25 +16,26 @@
     "url": "git+https://github.com/blakeface/in-concert.git"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
-	"scripts": {
-		"start": "react-native-scripts start",
-		"eject": "react-native-scripts eject",
-		"android": "react-native-scripts android",
-		"ios": "react-native-scripts ios"
-	},
-	"dependencies": {
-		"react": "16.0.0",
-		"react-native": "0.50.4",
-		"react-native-elements": "^0.18.4"
-	},
-	"devDependencies": {
-		"babel-jest": "21.2.0",
-		"babel-preset-react-native": "4.0.0",
-		"jest": "21.2.1",
-		"react-native-scripts": "^1.8.1",
-		"react-test-renderer": "16.0.0"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios"
+  },
+  "dependencies": {
+    "expo": "^23.0.6",
+    "react": "16.0.0",
+    "react-native": "0.50.4",
+    "react-native-elements": "^0.18.4"
+  },
+  "devDependencies": {
+    "babel-jest": "21.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "21.2.1",
+    "react-native-scripts": "^1.8.1",
+    "react-test-renderer": "16.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
 }

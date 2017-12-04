@@ -20,7 +20,7 @@ export default class Login extends Component {
 				<button onClick={this.handleFacebookClick}><i className="fa fa-facebook-square" aria-hidden="true"></i>Login with Facebook</button>
 				<button onClick={this.handleTwitterClick}><i className="fa fa-twitter-square" aria-hidden="true"></i>Login with Twitter</button>
 				<button onClick={this.handleTwitterClick}><i className="fa fa-send" aria-hidden="true"></i>Login with good ol' fashion email</button>
-			</article> 
+			</article>
 		)
 	}
 }
