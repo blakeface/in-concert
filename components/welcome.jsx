@@ -1,22 +1,10 @@
 import React, { Component } from 'react';
-import ScrollMagic from 'scrollmagic';
-import addIndicators from 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
-import { TweenMax } from 'gsap';
 
 export default class Welcome extends Component {
 	constructor(){
-		super();		
-		this.state = {
-			scrollMagicReady: false,
-		};
-
-		this.smController = new ScrollMagic.Controller();
+		super();
 		this.maxRadius = window.innerHeight;
 		this.circles = [];
-	}
-
-	componentDidMount() {
-		// if (this.state.scrollMagicReady == false) this.initScrollMagic();
 	}
 
 	drawCircles() {
@@ -28,30 +16,10 @@ export default class Welcome extends Component {
 				this.circles[i] = React.createElement('circle', {
 					key:`circle-${i}`, id:`circle-${i}`, cx:'50%', cy:'50%', r:`${radius}`, stroke:'#bbb', strokeWidth:'3', fill:'none',
 				})
-			} 
+			}
 		}
 
 		return this.circles;
-	}
-
-	initScrollMagic() {
-		for (var i = this.circles.length -1; i > 0; i--) {
-			const tween = new TimelineMax()
-			.add(
-				TweenMax.to(this.cirlces[i], 1.2, {css:{bezier:flightpath.entry}, ease:Power1.easeInOut})
-			)
-
-			const smScene = new ScrollMagic.Scene({
-				triggerElement: '#scrollStart',
-				duration: 500,
-				loglevel: 3,
-			})
-			.setPin(`#circle-${i}`)
-			.addIndicators()
-			.addTo(this.smController);
-		}
-
-		this.setState({scrollMagicReady: true});
 	}
 
 	setSVGRect(isViewBox) {
@@ -70,8 +38,8 @@ export default class Welcome extends Component {
 				</div>
 
 				<div id="scrollStart"></div>
-				
-				<svg className="vinyl" 
+
+				<svg className="vinyl"
 						viewBox={this.setSVGRect(true)}
 						width={this.setSVGRect(false)}
 						height={this.setSVGRect(false)}
