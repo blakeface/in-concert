@@ -1,41 +1,31 @@
 {
-  "name": "in_concert",
-  "version": "0.0.1",
+  "name": "in-concert",
   "private": true,
-  "description": "Listen to tunes. Make friends.",
-  "author": "Blake Netzeband",
-  "email": "blake.netzeband@gmail.com",
-  "url": "http://blakeface.us",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/blakeface/in-concert/issues"
+  "scripts": {
+    "start": "meteor run"
   },
-  "homepage": "https://github.com/blakeface/in-concert#readme",
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "meteor-node-stubs": "~0.2.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "description": "make friends. listen to music. 👯",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/blakeface/in-concert.git"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
-  "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios"
+  "keywords": [ "music", "concerts", "live", "music", "tickets", "friends", "connection", "social", "network", "networking"
+  ],
+  "author": "blake.netzeband@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blakeface/in-concert/issues"
   },
-  "dependencies": {
-    "expo": "^23.0.6",
-    "react": "16.0.0",
-    "react-native": "0.50.4",
-    "react-native-elements": "^0.18.4"
-  },
-  "devDependencies": {
-    "babel-jest": "21.2.0",
-    "babel-preset-react-native": "4.0.0",
-    "jest": "21.2.1",
-    "react-native-scripts": "^1.8.1",
-    "react-test-renderer": "16.0.0"
-  },
-  "jest": {
-    "preset": "react-native"
-  }
+  "homepage": "https://github.com/blakeface/in-concert#readme"
 }
+
+

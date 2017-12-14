@@ -3,9 +3,11 @@
 make friends. listen to music. 👯
 
 ### 🛠 Specs:
-  * React-native
+  * Meteor
+  * React
+  *
 
 
 ### 📲 To install / run / build:
-  * `$ npm start`
+  * `$ npm start` (or `$ meteor`)
   * `$ react-native run-ios`
